@@ -1,8 +1,28 @@
 # Lakers 2025 Offseason Targets - LeBron and Luka Fits
 
+### TL;DR
+
+Models lineup fit for LeBron James and Luka Dončić using 10 years of NBA + Synergy playtype data.
+Identifies ideal archetypes:
+
+- Defensively versatile bigs for LeBron who can also cut on offense
+
+- Scoring wings for Luka with an emphasized importance on spot up ability
+
+### How to Run
+
+1. Clone the repo
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run analysis in /scripts folder
+- web_scraping/lakers_fits_web_scraping_stats
+- lakers_fits_data_cleaning
+- lakers_fits_lebron_analysis
+- lakers_fits_luka_analysis
+- lakers_fits_acquisition_recommendations
+
 ### Executive Summary
 
-This analysis identifies optimal player targets for the Los Angeles Lakers to acquire in order to maximize lineup efficiency alongside LeBron James and Luka Dončić, assuming a scenario where both are on the same roster. Using ten years of lineup and playtype data sourced from the NBA and Synergy Sports APIs, the project models how specific player skills and positions have historically correlated with high net ratings when paired with either LeBron or Luka. The analysis recommends two key archetypes: defensive-oriented bigs who cut well for LeBron, and offensive-skilled wings who can spot up and post up for Luka. Top acquisition targets include Dean Wade, Mouhamed Gueye, Khris Middleton, and Harrison Barnes, with several alternative options identified based on contract flexibility and availability.
+This analysis identifies optimal player targets for the Los Angeles Lakers to acquire in order to maximize lineup efficiency alongside LeBron James and Luka Dončić, assuming a scenario where both are on the same roster. Using ten years of lineup and playtype data sourced from the NBA and Synergy Sports APIs, the project models how specific player skills and positions have historically correlated with high net ratings when paired with either LeBron or Luka. The analysis recommends two key archetypes: defensive-oriented bigs who cut well for LeBron, and offensive-skilled wings who can spot up and post up for Luka. Top acquisition targets include Dean Wade, Mouhamed Gueye, Harrison Barnes, and Garrison Mathews with several alternative options identified based on contract flexibility and availability.
 
 ### Memo Topics
 
@@ -10,9 +30,9 @@ This analysis identifies optimal player targets for the Los Angeles Lakers to ac
 
 -   Methodology
 
--   Results -- LeBron Lineups
+-   Results - LeBron Lineups
 
--   Results -- Luka Lineups
+-   Results - Luka Lineups
 
 -   Recommended Targets
 
@@ -34,7 +54,7 @@ The dataset was created by scraping 10 years of NBA lineup and playtype data thr
 
 Lineups were modeled using regression analysis with features formatted as Position_OffensiveOrDefensive_PlayType (e.g., "PF_Offensive_Cut", "SG_Defensive_Handoff"). This allowed the model to quantify the impact of specific positional skills on lineup net rating.
 
-### Results -- LeBron Lineups
+### Results - LeBron Lineups
 
 **Top Correlating Skills for Lineup Success**
 
@@ -48,9 +68,9 @@ Lineups were modeled using regression analysis with features formatted as Positi
 
 **Interpretation**
 
-Lineups featuring bigs who excel defensively---particularly in guarding ball handlers and covering screen actions---tended to yield high net ratings with LeBron. Additionally, bigs with high Offensive Cut percentiles complemented LeBron's drive-and-dish playmaking. Defensive PRBallHandler and Offensive Cut skills were especially critical given their high frequency in possessions.
+Lineups featuring bigs who excel defensively-particularly in guarding ball handlers and covering screen actions-tended to yield high net ratings with LeBron. Additionally, bigs with high Offensive Cut percentiles complemented LeBron's drive-and-dish playmaking. Defensive PRBallHandler and Offensive Cut skills were especially critical given their high frequency in possessions.
 
-### Results -- Luka Lineups
+### Results - Luka Lineups
 
 **Top Correlating Skills for Lineup Success**
 
@@ -68,37 +88,45 @@ Lineups with wings who ranked highly in perimeter shooting (spot-ups) and second
 
 ### Recommended Targets
 
-Based on the percentile rankings in 2024--2025 playtype data and positional filtering, the following players emerged as strong fits:
+Based on the percentile rankings in 2024-2025 playtype data and positional filtering, the following players emerged as strong fits:
 
 Big Men for LeBron Archetype:
 
--   Dean Wade -- Defensive versatility and cutting ability at a low price point.
+-   Dean Wade - Defensive versatility and cutting ability at a low price point.
 
--   Bobby Portis -- Strong positional defender with reliable offensive instincts.
+-   Bobby Portis - Strong positional defender with reliable offensive instincts.
 
--   Mouhamed Gueye -- Switchable defender on a team-friendly contract.
+-   Mouhamed Gueye - Switchable defender on a team-friendly contract.
 
--   Trendon Watford -- Undersized big with some switchability and offensive creation.
+-   Trendon Watford - Undersized big with some switchability and offensive creation.
+
+![Image](https://github.com/user-attachments/assets/d198f258-2c73-450e-9603-ed012d8a975b)
+![Image](https://github.com/user-attachments/assets/9a772986-8698-4bc4-9683-5b457f5e2d9e)
 
 Wings for Luka Archetype:
 
--   Khris Middleton -- Elite spot-up/post-up wing but likely expensive.
+-   Khris Middleton - Elite spot-up/post-up wing but likely expensive.
 
--   Harrison Barnes -- Veteran shooter who can defend and post.
+-   Harrison Barnes - Veteran shooter who can defend and post.
 
--   Garrison Mathews -- Sharpshooter with low acquisition cost.
+-   Garrison Mathews - Sharpshooter with low acquisition cost.
 
--   Deni Avdija -- Dream target given youth, contract, and two-way versatility.
+-   Deni Avdija - Dream target given youth, contract, and two-way versatility.
+
+![Image](https://github.com/user-attachments/assets/830674e3-1b55-4dda-9f05-ea3265db0a35)
 
 Secondary/Realistic Targets (Wings):
 
--   De'Anthony Melton -- Defensive-minded guard who can space.
+-   De'Anthony Melton - Defensive-minded guard who can space.
 
--   Sam Hauser -- High-value shooter potentially available due to Celtics' cap issues.
+-   Sam Hauser - High-value shooter potentially available due to Celtics' cap issues.
 
--   Malik Beasley -- Proven shooter, likely affordable.
+-   Malik Beasley - Proven shooter, likely affordable.
 
--   Grayson Allen -- Proven shooter with team control and availability.
+-   Grayson Allen - Proven shooter with team control and availability.
+
+![Image](https://github.com/user-attachments/assets/708e4f1b-b886-479c-b064-3d82fcacbd0b)
+![Image](https://github.com/user-attachments/assets/1713080c-2a3c-40a0-a956-817d3b536f68)
 
 ### Contract & Acquisition Context
 
