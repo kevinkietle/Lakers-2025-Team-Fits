@@ -90,40 +90,40 @@ Lineups with wings who ranked highly in perimeter shooting (spot-ups) and second
 
 Based on the percentile rankings in 2024-2025 playtype data and positional filtering, the following players emerged as strong fits:
 
-Big Men for LeBron Archetype:
+**Big Men for LeBron Archetype:**
 
--   Dean Wade - Defensive versatility and cutting ability at a low price point.
+-   **Dean Wade** - Defensive versatility and cutting ability at a low price point.
 
--   Bobby Portis - Strong positional defender with reliable offensive instincts.
+-   **Bobby Portis** - Strong positional defender with reliable offensive instincts.
 
--   Mouhamed Gueye - Switchable defender on a team-friendly contract.
+-   **Mouhamed Gueye** - Switchable defender on a team-friendly contract.
 
--   Trendon Watford - Undersized big with some switchability and offensive creation.
+-   **Trendon Watford** - Undersized big with some switchability and offensive creation.
 
 ![Image](https://github.com/user-attachments/assets/d198f258-2c73-450e-9603-ed012d8a975b)
 ![Image](https://github.com/user-attachments/assets/9a772986-8698-4bc4-9683-5b457f5e2d9e)
 
-Wings for Luka Archetype:
+**Wings for Luka Archetype:**
 
--   Khris Middleton - Elite spot-up/post-up wing but likely expensive.
+-   **Khris Middleton** - Elite spot-up/post-up wing but likely expensive.
 
--   Harrison Barnes - Veteran shooter who can defend and post.
+-   **Harrison Barnes** - Veteran shooter who can defend and post.
 
--   Garrison Mathews - Sharpshooter with low acquisition cost.
+-   **Garrison Mathews** - Sharpshooter with low acquisition cost.
 
--   Deni Avdija - Dream target given youth, contract, and two-way versatility.
+-   **Deni Avdija** - Dream target given youth, contract, and two-way versatility.
 
 ![Image](https://github.com/user-attachments/assets/830674e3-1b55-4dda-9f05-ea3265db0a35)
 
-Secondary/Realistic Targets (Wings):
+**Secondary/Realistic Targets (Wings):**
 
--   De'Anthony Melton - Defensive-minded guard who can space.
+-   **De'Anthony Melton** - Defensive-minded guard who can space.
 
--   Sam Hauser - High-value shooter potentially available due to Celtics' cap issues.
+-   **Sam Hauser** - High-value shooter potentially available due to Celtics' cap issues.
 
--   Malik Beasley - Proven shooter, likely affordable.
+-   **Malik Beasley** - Proven shooter, likely affordable.
 
--   Grayson Allen - Proven shooter with team control and availability.
+-   **Grayson Allen** - Proven shooter with team control and availability.
 
 ![Image](https://github.com/user-attachments/assets/708e4f1b-b886-479c-b064-3d82fcacbd0b)
 ![Image](https://github.com/user-attachments/assets/1713080c-2a3c-40a0-a956-817d3b536f68)
