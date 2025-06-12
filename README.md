@@ -12,7 +12,13 @@ Identifies ideal archetypes:
 ### How to Run
 
 1. Clone the repo
-2. Install dependencies: `pip install -r requirements.txt`
+2. Create and activate a virtual environment
+`python -m venv venv`
+# On Mac/Linux:
+`source venv/bin/activate`
+# On Windows:
+`venv\Scripts\activate`
+3. Install dependencies: `pip install -r requirements.txt`
 3. Run analysis in /scripts folder
 - web_scraping/lakers_fits_web_scraping_stats
 - lakers_fits_data_cleaning
