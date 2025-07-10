@@ -6,7 +6,6 @@ from matplotlib.patches import Patch
 import seaborn as sns
 import streamlit as st
 import os
-%matplotlib inline
 
 player_percentiles = pd.read_csv('outputs/player_playtypes_percentiles_2015_2024.csv')
 player_percentiles_2024 = player_percentiles[player_percentiles['SeasonYear'] == '2024-25']
@@ -27,6 +26,7 @@ attributes_bigs = ['Defensive_PRBallHandler', 'Defensive_OffScreen', 'Defensive_
 attributes_wings = ['Offensive_Postup', 'Offensive_Spotup', 'Offensive_OffScreen', 'Defensive_Handoff']
 total_attributes = [attributes_bigs, attributes_wings]
 
+'''
 def plot_player_comparison(players, skill_columns):
         # Create 2x2 subplot grid
     fig, axs = plt.subplots(2, 2, figsize=(16, 12))
@@ -92,6 +92,7 @@ def plot_player_comparison(players, skill_columns):
     plt.tight_layout(rect=[0, 0, 1, 0.95])
     plt.show()
 
+'''
 
 st.title("Lakers Teammate Fit Explorer (LeBron/Luka Framework)")
 
