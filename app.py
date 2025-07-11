@@ -26,75 +26,11 @@ attributes_bigs = ['Defensive_PRBallHandler', 'Defensive_OffScreen', 'Defensive_
 attributes_wings = ['Offensive_Postup', 'Offensive_Spotup', 'Offensive_OffScreen', 'Defensive_Handoff']
 total_attributes = [attributes_bigs, attributes_wings]
 
-'''
-def plot_player_comparison(players, skill_columns):
-        # Create 2x2 subplot grid
-    fig, axs = plt.subplots(2, 2, figsize=(16, 12))
-    axs = axs.flatten()  # Flatten 2D array to 1D list for easy looping
-
-    for i, player in enumerate(players):
-        ax = axs[i]
-        try:
-            # Get player percentile data
-            player_data = player_percentiles_2024[player_percentiles_2024['PLAYER_NAME'] == player].iloc[0]
-            percentiles = [player_data[attr] * 100 for attr in skill_columns]
-
-            # Get frequency data for each attribute (same for all players)
-            player_freqs = [frequency_map.get(attr, 0) for attr in skill_columns]
-
-            # Bar positions
-            x = np.arange(len(skill_columns))
-            bar_width = 0.35
-
-            # Plot percentile and frequency bars
-            ax.bar(x - bar_width/2, percentiles, width=bar_width, color='lemonchiffon', label='Percentile')
-            ax.bar(x + bar_width/2, player_freqs, width=bar_width, color='plum', label='Frequency')
-
-            # Clean visual style
-            ax.set_xticks(x)
-            ax.set_xticklabels([attr.replace('_', '\n') for attr in skill_columns], rotation=0, ha='center')
-            ax.set_ylim(0, 100)
-            ax.set_title(f"{player}", fontsize=16)
-
-            # Faint gridlines and no border
-            ax.grid(True, which='both', axis='both', linestyle='--', color='lightgray', alpha=0.7)
-            for spine in ['top', 'right', 'left', 'bottom']:
-                ax.spines[spine].set_visible(False)
-
-            # Add legend only to the first plot
-            if i == 0:
-                legend_elements = [
-                    Patch(facecolor='lemonchiffon', label='Percentile'),
-                    Patch(facecolor='plum', label='Frequency')
-                ]
-                ax.legend(handles=legend_elements, loc='upper left')
-
-            # Add player image in slightly adjusted position
-            image_path = f'../images/{player.lower().replace(" ", "_")}.png'
-            try:
-                img = mpimg.imread(image_path)
-                img_ax = fig.add_axes([
-                    ax.get_position().x1 - 0.07,  # moved slightly more right
-                    ax.get_position().y1 - 0.12,
-                    0.1, 0.1
-                ])
-                img_ax.imshow(img)
-                img_ax.axis('off')
-            except FileNotFoundError:
-                print(f"Image not found for {player}: {image_path}")
-
-        except IndexError:
-            print(f"No data found for {player}")
-            ax.set_visible(False)
-
-    # Final layout
-    fig.suptitle("Key Attribute Percentiles and Frequencies – Select Players", fontsize=16)
-    plt.tight_layout(rect=[0, 0, 1, 0.95])
-    plt.show()
-
-'''
 
 st.title("Lakers Teammate Fit Explorer (LeBron/Luka Framework)")
+st.write("This tool allows you to select any player in the NBA and see how they stack up in key attributes necessary to fit with LeBron and Luka.")
+st.write("In my analysis, the archetype that fits with LeBron are bigs that excel in the following playtype attributes: Defensive PRBallHandler, Defensive OffScreen, Defensive PRRollMan, and Offensive Cut")
+st.write("In my analysis, the archetype that fits with Luka are wings that excel in the following playtypes attributes: Offensive SpotUp, Offensive PostUp, Offensive OffScreen, and Defensive Handoff")
 
 # Allow user to select players dynamically
 player_options = player_percentiles_2024['PLAYER_NAME'].unique()
@@ -170,3 +106,6 @@ if players_to_compare and attributes_to_compare:
     fig.suptitle("Key Attribute Percentiles and Frequencies – Select Players", fontsize=18)
     plt.tight_layout(rect=[0, 0, 1, 0.95])
     st.pyplot(fig)
+
+st.write("The bigs we identified as targets that excel in this framework are Dean Wade, Bobby Portis, Mouhamed Gueye, and Trendon Watford.")
+st.write("The wings we identified as targets that excel in this framework are Khris Middleton, Harrison Barnes, Garrison Mathews, Deni Avdija. (Secondary: De’Anthony Melton, Sam Hauser, Malik Beasley, Grayson Allen)")
