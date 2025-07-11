@@ -9,6 +9,8 @@ Identifies ideal archetypes:
 
 - Scoring wings for Luka with an emphasized importance on spot up ability
 
+Exploratory web app - <https://lakers-2025-team-fits.streamlit.app/>
+
 ### How to Run
 
 1. Clone the repo
@@ -18,7 +20,7 @@ On Mac/Linux:
 `source venv/bin/activate`
 On Windows:
 `venv\Scripts\activate` <br>
-3. Install dependencies: `pip install -r requirements.txt`
+3. Install dependencies: `pip install -r dev-requirements.txt`
 4. Run analysis in /scripts folder
 - web_scraping/lakers_fits_web_scraping_stats
 - lakers_fits_data_cleaning
@@ -29,6 +31,8 @@ On Windows:
 ### Executive Summary
 
 This analysis identifies optimal player targets for the Los Angeles Lakers to acquire in order to maximize lineup efficiency alongside LeBron James and Luka Dončić, assuming a scenario where both are on the same roster. Using ten years of lineup and playtype data sourced from the NBA and Synergy Sports APIs, the project models how specific player skills and positions have historically correlated with high net ratings when paired with either LeBron or Luka. The analysis recommends two key archetypes: defensive-oriented bigs who cut well for LeBron, and offensive-skilled wings who can spot up and post up for Luka. Top acquisition targets include Dean Wade, Mouhamed Gueye, Harrison Barnes, and Garrison Mathews with several alternative options identified based on contract flexibility and availability.
+
+In addition to these target recommendations, you can compare any NBA players and how they stack up with the two player archetypes (defensive-oriented bigs who cut well for LeBron and offensive-skilled wings who can spot up and post up for Luka) in the interactive web app we built using Streamlit - <https://lakers-2025-team-fits.streamlit.app/>
 
 ### Memo Topics
 
